@@ -1,0 +1,37 @@
+SỔ TAY CÔNG TÁC CAI NGHIỆN – CƠ SỞ CNMT SỐ 6 TP. ĐỒNG NAI
+Hướng dẫn cài lên điện thoại và dùng không cần mạng
+
+THÀNH PHẦN THƯ MỤC
+  index.html              Nội dung và chương trình sổ tay
+  manifest.webmanifest    Khai báo tên, biểu tượng để cài như ứng dụng
+  sw.js                   Lưu bộ nhớ đệm để dùng khi không có mạng
+  icon-*.png, apple-touch-icon.png   Biểu tượng ứng dụng
+Không đổi tên, không tách rời các tệp này.
+
+CÁCH 1 – CÀI NHƯ ỨNG DỤNG (Android và iPhone) – KHUYẾN NGHỊ
+Bước 1. Đưa cả thư mục lên một địa chỉ web có HTTPS (bắt buộc HTTPS để dùng được khi mất mạng):
+  - Máy chủ web nội bộ của đơn vị (đề nghị bộ phận CNTT Công an tỉnh hỗ trợ), hoặc
+  - Dịch vụ lưu trữ trang tĩnh miễn phí (ví dụ Netlify Drop, GitHub Pages). Nội dung sổ tay chỉ gồm quy định pháp luật, không có dữ liệu học viên; việc đăng lên Internet công cộng cần được chỉ huy đơn vị đồng ý.
+Bước 2. Trên điện thoại, mở địa chỉ đó MỘT LẦN khi có mạng, chờ trang tải xong.
+Bước 3. Cài vào màn hình chính:
+  - Android (Chrome): bấm nút "Cài vào điện thoại" ở Trang chủ sổ tay, hoặc menu ⋮ → "Cài đặt ứng dụng" / "Thêm vào màn hình chính".
+  - iPhone (Safari): nút Chia sẻ (ô vuông có mũi tên) → "Thêm vào Màn hình chính" → Thêm.
+Bước 4. Mở bằng biểu tượng "Sổ tay CS6" trên màn hình. Từ đây dùng được cả khi tắt mạng.
+
+CÁCH 2 – MỞ TRỰC TIẾP TỆP (chỉ Android, không cần máy chủ)
+  - Chép tệp index.html vào điện thoại (qua Zalo cá nhân, cáp USB...).
+  - Mở ứng dụng Tệp/File, chọn index.html → Mở bằng Chrome.
+  - Dùng được không cần mạng; nhưng không có biểu tượng ứng dụng riêng, phông chữ là phông của máy.
+  - iPhone không hỗ trợ tốt cách này, nên dùng Cách 1.
+
+CÁCH 3 – ĐÓNG GÓI THÀNH TỆP CÀI ĐẶT ANDROID (APK)
+  Sau khi có địa chỉ HTTPS ở Cách 1, có thể dùng công cụ PWABuilder (pwabuilder.com) để tạo gói cài đặt Android từ địa chỉ đó, phát cho cán bộ cài như ứng dụng thông thường.
+
+CẬP NHẬT NỘI DUNG
+  1. Sửa nội dung trong index.html (mảng TOPICS, SITUATIONS, QUIZ ở đầu phần chương trình).
+  2. Mở sw.js, đổi dòng VERSION (ví dụ 'stcn-v2026-12-01').
+  3. Tải lại thư mục lên máy chủ. Điện thoại có mạng sẽ tự nhận bản mới ở lần mở sau.
+
+LƯU Ý
+  - Sổ tay là tài liệu tra cứu nhanh, không thay thế văn bản gốc.
+  - Đánh dấu, lịch sử, kết quả ôn tập chỉ lưu trên từng điện thoại.
