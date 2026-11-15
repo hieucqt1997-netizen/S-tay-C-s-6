@@ -1,6 +1,6 @@
 // Sổ tay công tác cai nghiện – bộ nhớ đệm để dùng không cần mạng.
 // Khi cập nhật nội dung index.html, tăng số phiên bản dưới đây để điện thoại tải bản mới.
-const VERSION = 'stcn-v2026-11-10b';
+const VERSION = 'stcn-v2026-11-15';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon-maskable-512.png', './apple-touch-icon.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(CORE)).then(() => self.skipWaiting()));
